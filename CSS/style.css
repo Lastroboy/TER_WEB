@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color : #fefefe;
+    --hover-color : #f7f9ff;
+    --banner-color : #f7f9ff;; 
+    --text-color : #25272e;
+    --sub-text : #08a045;
+    --footer-color : #25272e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Poppins, "Segoe UI", sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    /* background-color: var(--primary-color); */
+    /* background: linear-gradient(to right, #fce4ec, #b39ddb); */
+    color: #111;
+    /* max width 1000px  margin right auto margin left auto et rajouter du padding*/
+}
+
+
+/* Section principale */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    overflow: hidden;
+    margin-right: auto;
+    margin-right: auto;
+    padding-left: 120px;
+    padding-right: 120px; 
+    width: 100%;
+}
+
+/* Image de fond en arrière-plan */
+.hero-background-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6; /* Ajuste la transparence pour une meilleure lisibilité */
+    z-index: -1;  /* Place l'image en arrière-plan */
+}
+
+/* Conteneur texte + image */
+.hero-text {
+    z-index: 1;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Texte */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Assure une bonne lisibilité */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Image de la carte */
+.hero-img {
+    position: relative;
+    left: 50px;
+    max-width: 400px;
+}
+
+/* Bouton */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* A MODIFIER LA COULEUR */
+.btn-primary:hover {
+    background-color: var(--sub-text); 
+}
+
+/* BANNER */
+.banner{
+    background-color: var(--banner-color); /* Fond clair */
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-right: auto;
+    margin-right: auto;
+    padding-left: 120px;
+    padding-right: 120px; 
+    width: 100%;
+}
+
+.banner .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 40px; /* Espacement entre l’image et le texte */
+    margin-bottom: 20px;
+}
+
+.banner-graphique {
+    position: relative;
+    width: 300px; /* Ajuste selon ton image */
+    height: auto;
+    border-radius: 4px;
+}
+
+.banner ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.banner ul li {
+    text-align: center;
+    font-size: 18px;
+}
+
+.banner ul li:nth-child(1) {
+    color: #e6b800; /* Jaune */
+}
+
+.banner ul li:nth-child(2) {
+    color: #e74c3c; /* Rouge */
+}
+
+.banner ul li:nth-child(3) {
+    color: #2c3e50; /* Bleu */
+}
+
+.banner ul li span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* .PresentationObjectif{
+    margin-top: 25px;
+
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 40px 20px;
+    text-align: justify;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-left: 120px;
+}
+}
+
+.pres-img {
+    display: block;
+    float: right;
+    margin-right: 120px;
+    height: 225px;
+    position:relative;
+    padding-left: 120px;
+} */
+
+
+.presentation{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 25px;
+    line-height: 1.5;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 120px;
+    padding-right: 120px; 
+}
+
+.presentation div{
+    text-align: justify;
+}
+
+.presentation h1{
+    font-size: 2rem;
+    color: var(--sub-text);
+    margin-bottom: 10px;
+}
+
+.presentation p{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.pres-img{
+    max-height: 300px;
+    border-radius: 6px;
+}
