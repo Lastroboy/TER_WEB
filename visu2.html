@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/visu2.css">
     <script src="./JS/script.js" defer></script>
 </head>
 
@@ -36,8 +37,39 @@
     <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
     <main>
-        <h1>Visualisation des activités de Loisirs et Culture en Région Bretagne</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt perspiciatis officia aliquam, accusantium eum dicta consequatur animi enim voluptas, eius pariatur autem tenetur quos veniam, amet optio aut alias!</p>
+        <section class="hero">
+            <img class="hero-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
+            <div class="hero-text">
+                <h1>Visualisation des Fêtes et 
+                    des Manifestations en Région Bretagne</h1>
+            </div>
+            <img class="hero-img" src="./IMG/map-region-bretagne.png" alt="Map Région Bretagne">
+        </section>
+
+        <section class="premiere">
+            <!-- Intégration petit graphique -->
+            <h1>Première visualisation</h1>
+            <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
+        </section>
+
+        <section class="deuxieme">
+            <h1>Présentation de la licence</h1>
+            <p>La licence MIASHS est une  formation pluridisciplinaire qui allie les  mathématiques,
+               l’informatique et les sciences humaines (économie, sociologie, psychologie, etc.),
+               permettant d’analyser et de modéliser des phénomènes complexes. 
+               Nous avons acquis des compétences en  informatique tel que R et Python, 
+               en mathématiques avec de l’algèbre, de l’analyse</p>
+        </section>
+
+
+        <section class="map" style="background-color: #f7f9ff; width: 100%; text-align: center; padding-top: 25px; padding-bottom: 25px;">
+            <h2 style="font-size: 2rem; padding-bottom: 25px;">Parlez touriste, revenez Breton.</h2>
+            <div id="map-container">
+                <!-- Intégration de la carte interactive ici -->
+                 <iframe src="./IMG/carteidee-2.html" style="width: 80%; height: 600px; border: none;"></iframe>
+            </div>
+        </section>
+
     </main>
     
     <footer>
