@@ -13,8 +13,13 @@ nav{
     /* background-color: var(--primary-color); */
     /* border-bottom: 1px solid var(--hover-color); */
     background: rgba(255, 255, 255, 0.3); /* Ajoute un fond semi-transparent */
-    padding-right: 5%;
-    padding-left: 5%;
+    /* padding-right: 5%;
+    padding-left: 5%; */
+    padding-left: 120px;
+    padding-right: 120px; 
+
+    margin-right: auto;
+    margin-right: auto;
 }
 
 nav ul{
@@ -74,7 +79,7 @@ nav a.active-link{
     display: none;
 }
 
-@media  screen and (max-width: 950px){
+@media  screen and (max-width: 1120px){
     header{
         margin: 0;
     }
@@ -84,6 +89,7 @@ nav a.active-link{
     }
 
     nav{
+        padding: 0;
         background-color: var(--primary-color);
         position: fixed;
         top: 0;
@@ -107,11 +113,6 @@ nav a.active-link{
         width: 100%;
         flex-direction: column;
     }
-
-    nav ul{
-        width: 100%;
-    }
-
 
     nav a{
         width: 100%;
