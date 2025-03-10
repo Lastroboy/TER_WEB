@@ -40,44 +40,49 @@
 
     <!-- CONTENU PREINCIPAL -->
     <main>
-        <section class="hero"> <!--- changer le nom des classes --->
-            <img class="hero-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
-            <div class="hero-text">
+        <section class="intro">
+            <img class="intro-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
+
+            <div class="intro-text">
                 <h1>Les données culturelles de votre région !</h1>
                 <p>Découvrez les événements, les traditions et le patrimoine unique de la Bretagne.</p>
-                <a href="#explore" class="btn-primary">Découvrir le projet</a>
+                <a href="#presentation" class="intro-btn">Découvrir le projet</a>
             </div>
-            <img class="hero-img" src="./IMG/map-region-bretagne.png" alt="Map Région Bretagne">
+
+            <img class="intro-img" src="./IMG/map-region-bretagne.png" alt="Map Région Bretagne">
         </section>
 
         <section class="banner">
+            <!-- Intégration graphique -->
+            <iframe class="banner-graphique" src="./Visualisation/plotline.html"></iframe>
+              
             <div class="banner-container">
-                <!-- Intégration petit graphique -->
-                <!-- <iframe class="banner-graphique" src="plotly_chart.html" width="100%" height="500px"></iframe> -->
-                <ul>
-                    <li><span>78%</span> des utilisateurs recommandent.</li>
-                    <li><span>1015</span> activités recensées.</li>
-                    <li><span>27%</span> des utilisateurs ont partagé.</li>
+                <ul class="banner-data">
+                    <li><span>78%</span> des utilisateurs recommandent</li>
+                    <li><span>1015</span> activités recensées</li>
+                    <li><span>27%</span> des utilisateurs ont partagé</li>
                 </ul>
+
+                <p>Lorem Ipsum is simply dummy text essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
-            <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
         </section>
 
-        <section id="explore" class="presentation">
-            <div>
-                <h1>Présentation du projet</h1>
+        <section id="presentation">
+            <div class="presentation-text">
+                <h1 class="projet">Présentation du projet</h1>
                 <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
                 <p>Grâce à la visualisation de données, nous proposons une approche interactive pour mieux comprendre la répartition et l'évolution de ces événements.</p>
                 
-                <h1>Objectif du site</h1>
+                <h1 class="objectif">Objectif du site</h1>
                 <p>L'objectif de ce site est de fournir une représentation claire et accessible des festivals de cinéma, des fêtes et manifestations, ainsi que des activités sportives et culturelles en Bretagne.</p>
                 <p>À travers des graphiques dynamiques et des cartes interactives, nous mettons en avant des tendances, telles que la répartition géographique des événements ou leur évolution au fil du temps.</p>
             </div>
+
             <img class="pres-img" src="./IMG/bretagneFalaise.jpg" alt="Photo Bretagne">
         </section>
 
-        <section class="map" style="background-color: #f7f9ff; width: 100%; text-align: center; padding-top: 25px; padding-bottom: 25px;">
-            <h2 style="font-size: 2rem; padding-bottom: 25px;">Parlez touriste, revenez Breton.</h2>
+        <section class="map">
+            <h2>Parlez touriste, revenez Breton.</h2>
             <div id="map-container">
                 <!-- Intégration de la carte interactive ici -->
                  <iframe src="./Visualisation/carteidee.html" style="width: 80%; height: 600px; border: none;"></iframe>
