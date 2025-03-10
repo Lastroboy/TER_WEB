@@ -7,6 +7,9 @@
     --text-color : #25272e;
     --sub-text : #08a045;
     --footer-color : #25272e;
+    --yellow: #ffc107;
+    --red: #dc3545;
+    --secondary: #6c757d;
 }
 
 *{
@@ -31,7 +34,7 @@ body{
 
 
 /* Section principale */
-.hero {
+.intro {
     position: relative;
     display: flex;
     align-items: center;
@@ -46,7 +49,7 @@ body{
 }
 
 /* Image de fond en arrière-plan */
-.hero-background-top{
+.intro-background-top{
     position: absolute;
     top: 0;
     left: 0;
@@ -58,168 +61,168 @@ body{
 }
 
 /* Conteneur texte + image */
-.hero-text {
-    z-index: 1;
-    padding: 30px;
-    border-radius: 10px;
+.intro-text {
+    padding: 50px;
 }
 
 /* Texte */
-.hero h1 {
+.intro h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: var(--text-color); /* Assure une bonne lisibilité */
 }
 
-.hero p {
+.intro p {
     font-size: 1.2rem;
-    color: #222;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 /* Image de la carte */
-.hero-img {
+.intro-img {
     position: relative;
-    left: 50px;
     max-width: 400px;
 }
 
 /* Bouton */
-.btn-primary {
+.intro-btn {
     display: inline-block;
     background-color: var(--text-color);
-    color: #fff;
+    color: var(--banner-color);
     padding: 12px 24px;
     border-radius: 6px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     transition: background 0.3s ease;
+    margin-top: 15px;
 }
 
 /* A MODIFIER LA COULEUR */
-.btn-primary:hover {
+.intro-btn:hover {
     background-color: var(--sub-text); 
 }
 
 /* BANNER */
-.banner{
+.banner {
     background-color: var(--banner-color); /* Fond clair */
     width: 100%;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 16px;
-    color: var(--text-color);
-    line-height: 1.5;
-    margin-right: auto;
-    margin-right: auto;
-    padding-left: 120px;
-    padding-right: 120px; 
-    width: 100%;
-}
 
-.banner .banner-container {
+    padding: 50px 120px;
+
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    gap: 40px; /* Espacement entre l’image et le texte */
-    margin-bottom: 20px;
+
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5; /* Mettre en cohérence avec les autres line-height */
+
+    gap: 40px; /* Espacement entre le graphique et le texte */
 }
 
+
 .banner-graphique {
-    position: relative;
-    width: 300px; /* Ajuste selon ton image */
-    height: auto;
+    height: 300px;
+    width: 100%;
+    max-width: 500px; /* Évite que l'iframe devienne trop large */
     border-radius: 4px;
+    border: none; /* Supprime le cadre noir si nécessaire */
 }
 
 .banner ul {
     display: flex;
     justify-content: center;
-    gap: 50px;
     list-style: none;
 }
 
 .banner ul li {
+    padding: 0px 15px;
     text-align: center;
     font-size: 18px;
 }
 
 .banner ul li:nth-child(1) {
-    color: #e6b800; /* Jaune */
+    color: var(--yellow); /* Jaune */
+    border-right: 2px solid var(--secondary);
 }
 
 .banner ul li:nth-child(2) {
-    color: #e74c3c; /* Rouge */
+    color: var(--red); /* Rouge */
+    border-right: 2px solid var(--secondary);
 }
 
 .banner ul li:nth-child(3) {
-    color: #2c3e50; /* Bleu */
+    color: var(--sub-text); /* Bleu */
 }
 
 .banner ul li span {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
-/* .PresentationObjectif{
-    margin-top: 25px;
-
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 40px 20px;
-    text-align: justify;
+.banner p {
+    margin-top: 20px; /* Espacement avec la liste */
+    text-align: center; /* On centre le paragraphe pour qu'il soit centré avec la liste de donnée */
     font-size: 16px;
-    color: var(--text-color);
-    line-height: 1.5;
-    padding-left: 120px;
-}
+    line-height: 1.6;
 }
 
-.pres-img {
-    display: block;
-    float: right;
-    margin-right: 120px;
-    height: 225px;
-    position:relative;
-    padding-left: 120px;
-} */
-
-
-.presentation{
+#presentation{
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
-    padding: 40px 20px;
-    margin-top: 25px;
+
+    /* A MODIFIER */
+    /* padding: 80px 40px; /* Qu'est ce que ça fait ça */
+    /* margin-top: 25px; */
     line-height: 1.5;
+
     margin-right: auto;
     margin-left: auto;
-    padding-left: 120px;
-    padding-right: 120px; 
+    /* padding-left: 120px;
+    padding-right: 120px;  */
+    padding: 25px 120px 25px 120px;
 }
 
-.presentation div{
+.presentation-text{
     text-align: justify;
 }
 
-.presentation h1{
+#presentation h1{
+    padding: 25px 0px 25px 0px;
     font-size: 2rem;
-    color: var(--sub-text);
-    margin-bottom: 10px;
+    color: var(--red);
 }
 
-.presentation p{
-    font-size: 1.1rem;
+#presentation p{
+    font-size: 16px;
     color: var(--text-color);
-    margin-bottom: 20px;
+    padding: 0px 0px 25px 0px;
 }
 
 .pres-img{
-    max-height: 300px;
+    padding-left: 75px;
+    max-height: 400px;
     border-radius: 6px;
+}
+
+.map{
+    background-color: #f7f9ff; 
+    width: 100%; 
+    text-align: center;
+    
+
+    padding: 35px 0px 35px 0px;
+
+    margin-right: auto;
+    margin-right: auto;
+}
+
+.map h2{
+    font-size: 2rem; 
+    padding-bottom: 25px;
 }
