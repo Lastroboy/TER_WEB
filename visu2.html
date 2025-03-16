@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Loisirs & Culture</title>
+    <title>Loisirs & Culture | Visualisation de Bretagne</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="./IMG/region-bretagne-logo.svg">
@@ -12,7 +12,7 @@
     <!-- Feuille de style -->
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="./CSS/visu2.css">
+    <link rel="stylesheet" href="./CSS/visu.css">
     <script src="./JS/script.js" defer></script>
 </head>
 
@@ -41,39 +41,51 @@
     <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
     <main>
-        <section class="hero">
-            <img class="hero-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
-            <div class="hero-text">
-                <h1>Visualisation des Fêtes et 
-                    des Manifestations en Région Bretagne</h1>
+        <section class="intro">
+            <img class="intro-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
+
+            <div class="intro-text">
+                <h1>Visualisation des Loisirs et Culture en Région Bretagne</h1>
+                <p>Découvrez ici les statistiques et les visualisations intéractives de la région.</p>
             </div>
-            <img class="hero-img" src="./IMG/map-region-bretagne.png" alt="Map Région Bretagne">
+
+            <img class="intro-img" src="./IMG/drapeau-bretagne.png" alt="Map Région Bretagne">
         </section>
 
-        <section class="premiere">
-            <!-- Intégration petit graphique -->
-            <h1>Première visualisation</h1>
-            <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
+        <section class="visu1">
+            <div class="visu1-text">
+                <h1 class="visu1-titre">Première visualisation</h1>
+                <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
+                <p>Grâce à la visualisation de données, nous proposons une approche interactive pour mieux comprendre la répartition et l'évolution de ces événements.</p>
+            </div>
+
+            <img class="visu1-img" src="./IMG/bretagneFalaise.jpg" alt="Photo Bretagne">
         </section>
 
-        <section class="deuxieme">
-            <h1>Présentation de la licence</h1>
-            <p>La licence MIASHS est une  formation pluridisciplinaire qui allie les  mathématiques,
-               l’informatique et les sciences humaines (économie, sociologie, psychologie, etc.),
-               permettant d’analyser et de modéliser des phénomènes complexes. 
-               Nous avons acquis des compétences en  informatique tel que R et Python, 
-               en mathématiques avec de l’algèbre, de l’analyse</p>
+        <section class="banner">
+            <iframe class="banner-graphique" src="./Visualisation/plotline.html"></iframe>
+
+            <iframe class="banner-graphique" src="./Visualisation/plotline.html"></iframe>
+        </section>
+
+        <section class="visu2">
+            <img class="visu2-img" src="./IMG/bretagneFalaise.jpg" alt="Photo Bretagne">
+
+            <div class="visu2-text">
+                <h1 class="visu2-titre">Deuxième visualisation</h1>
+                <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
+                <p>Grâce à la visualisation de données, nous proposons une approche interactive pour mieux comprendre la répartition et l'évolution de ces événements.</p>
+            </div>
         </section>
 
 
-        <section class="map" style="background-color: #f7f9ff; width: 100%; text-align: center; padding-top: 25px; padding-bottom: 25px;">
-            <h2 style="font-size: 2rem; padding-bottom: 25px;">Parlez touriste, revenez Breton.</h2>
+        <section class="map">
+            <h2>Les lieux incontournables.</h2>
             <div id="map-container">
                 <!-- Intégration de la carte interactive ici -->
                  <iframe src="./Visualisation/carteidee.html" style="width: 80%; height: 600px; border: none;"></iframe>
             </div>
         </section>
-
     </main>
     
     <footer>
@@ -112,6 +124,5 @@
         </div>
         <p class="footer-bottom">Proposé par l’équipe TER L3 MIASHS 2024-2025 sous l’encadrement de Madame Lemaitre.</p>
     </footer>
-
 </body>
 </html>
