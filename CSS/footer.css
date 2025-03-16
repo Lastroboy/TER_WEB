@@ -11,16 +11,17 @@
 
 footer{
     position: static;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 120px 25px 120px;
     bottom: 0;
     width: 100%;
+
     background-color: #25272e;
     color: #fefefe;
     font-family: Arial, sans-serif;
+
     margin-right: auto;
     margin-left: auto;
-    padding-left: 120px;
-    padding-right: 120px; 
+
     width: 100%;
 }
 
@@ -67,31 +68,26 @@ footer a:hover{
     font-weight: bold;
 }
 
-@media  screen and (max-width: 1100px){
-
-    .footer-container {
-        flex-direction: column; /* Place les éléments en colonne */
-        text-align: center;
-        align-items: center;
-    }
-
+@media  screen and (max-width: 1200px){
     .footer-logos img{
         display: none;
     }
+
+    .footer-container{
+        gap: 25px;
+    }
 }
 
-@media  screen and (max-width: 700px){}
-
-@media  screen and (max-width: 500px){
+@media  screen and (max-width: 768px){
     footer{
-        position: fixed;
-        padding: 20px 20px 20px 20px;
+        padding: 30px 120px 25px 120px;
     }
 
-    .footer-container {
+    .footer-container{
         flex-direction: column; /* Place les éléments en colonne */
         text-align: center;
         align-items: center;
-        gap: 30px;
+        gap: 35px;
     }
+    
 }
