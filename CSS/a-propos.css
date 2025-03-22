@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color : #fefefe;
+    --hover-color : #f7f9ff;
+    --banner-color : #f7f9ff;; 
+    --text-color : #25272e;
+    --sub-text : #4c74b5;
+    --footer-color : #25272e;
+    --transparent : rgba(0, 0, 0, 0.5)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Poppins, "Segoe UI", sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+
+/* Section principale */
+.intro {
+    position: relative; /*RELATIVE*/
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    min-height: 548px;
+    
+    margin: 0px auto;
+    padding: 0px 120px;
+}
+
+/* Image de fond en arrière-plan */
+.intro-background-top{
+    position: absolute; /* FIXED*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    opacity: 0.6; /* Ajuste la transparence pour une meilleure lisibilité */
+    z-index: -1;  /* Place l'image en arrière-plan */
+}
+
+.intro-text{
+    padding: 45px 0px;
+    text-align: center;
+    color: var(--text-color); /* Assure une bonne lisibilité */
+}
+
+/* Texte */
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro .img-rennes2 {
+    margin-top: 25px;
+    height: 300px;
+}
+
+.licence{
+    background-color: var(--hover-color);
+    /* height: 300px; */
+
+    margin: 25px auto;
+    padding: 75px 120px;
+
+    text-align: center;
+}
+
+.licence h1{
+    color: var(--text);
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.licence p{
+    font-size: 16px;
+}
+
+.equipe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    padding: 75px 120px;
+}
+
+.equipe .pitch{
+    max-width: 500px; /* largeur maximale */
+    min-height: 350px; /* hauteur minimale */
+
+    padding: 30px 25px;
+    margin: 30px 50px;
+
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px -30px var(--footer-color);
+
+    /* justify-content: center; */
+}
+
+.equipe h2{
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.equipe p{
+    text-align: justify;
+}
+
+/* PARTIE MAP */
+.map{
+    background-color: #f7f9ff; 
+    width: 100%; 
+    text-align: center;
+    
+
+    padding: 35px 0px 35px 0px;
+
+    margin: 0px auto;
+}
+
+.map h2{
+    font-size: 2rem; 
+    padding-bottom: 25px;
+}
+
