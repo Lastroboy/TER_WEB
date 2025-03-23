@@ -5,8 +5,10 @@
     --hover-color : #f7f9ff;
     --banner-color : #f7f9ff;; 
     --text-color : #25272e;
-    --sub-text : #4c74b5;
+    --sub-text :  #4c74b5;
     --footer-color : #25272e;
+    --yellow: #ffc107;
+    --red: #dc3545;
 }
 
 *{
@@ -90,9 +92,8 @@ body{
 
     line-height: 1.5;
 
-    margin-right: auto;
-    margin-left: auto;
-    padding: 25px 120px 25px 120px;
+    margin: 0px auto;
+    padding: 25px 120px;
 
     min-height: 548px;
 }
@@ -112,19 +113,13 @@ body{
     color: var(--text-color);
     padding: 0px 0px 25px 0px;
 }
-
-/* .visu1-img{
-    padding-left: 75px;
-    max-height: 400px;
-    border-radius: 6px;
-} */
  
 .visu1-graphique{
     padding-left: 75px;
     max-height: 400px; /* PEUT ETRE A MODIFIER */
     height: 400px;
     width: 100%;
-    max-width: 500px; /* Évite que l'iframe devienne trop large */
+    max-width: 700px; /* Évite que l'iframe devienne trop large */
     border: none; /* Supprime le cadre noir si nécessaire */
 }
 
@@ -163,9 +158,8 @@ body{
 
     line-height: 1.5;
 
-    margin-right: auto;
-    margin-left: auto;
-    padding: 25px 120px 25px 120px;
+    margin: 0px auto;
+    padding: 25px 120px;
 
     min-height: 548px;
 }
@@ -175,32 +169,27 @@ body{
 }
 
 .visu2 h1{
-    padding: 25px 0px 25px 0px;
-    text-align: right;
+    padding: 25px 0px;
     font-size: 2rem;
     color: var(--red);
 }
 
 .visu2 p{
     font-size: 16px;
-    text-align: right;
     color: var(--text-color);
-    padding: 0px 0px 25px 0px;
+    padding-bottom: 25px;
 }
 
-/* .visu2-img{
+
+.visu2-graphique{
     padding-right: 75px;
     max-height: 400px;
-    border-radius: 6px;
-} */
-.visu2-graphique{
-    padding-left: 75px;
-    max-height: 400px; /* PEUT ETRE A MODIFIER */
     height: 400px;
     width: 100%;
-    max-width: 500px; /* Évite que l'iframe devienne trop large */
-    border: none; /* Supprime le cadre noir si nécessaire */
+    max-width: 700px; /* Évite que l'iframe devienne trop large */
+    border: none; /* Supprime le cadre noir */
 }
+
 /* PARTIE MAP */
 .map{
     background-color: #f7f9ff; 
