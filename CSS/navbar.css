@@ -5,8 +5,10 @@
     --hover-color : #f7f9ff;
     --banner-color : #f7f9ff;; 
     --text-color : #25272e;
-    --sub-text : #08a045;
+    --sub-text :  #4c74b5;
     --footer-color : #25272e;
+    --yellow: #ffc107;
+    --red: #dc3545;
     --transparent : rgba(0, 0, 0, 0.5)
 }
 
