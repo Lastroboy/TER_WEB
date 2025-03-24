@@ -11,7 +11,7 @@ carte.add_trace(go.Scattermapbox(
     lat = df_activites["latitude"], 
     lon = df_activites["longitude"],
     mode = "markers",
-    marker = dict(size = 10, color = "yellow"),
+    marker = dict(size = 10, color = "#FFC107"),
     name = "Activités sportives et culturelles"
 ))
 
@@ -19,7 +19,7 @@ carte.add_trace(go.Scattermapbox(
     lat = df_festivals["latitude"], 
     lon = df_festivals["longitude"],
     mode = "markers",
-    marker = dict(size = 10, color = "blue"),
+    marker = dict(size = 10, color = "#4C74B5"),
     name = "Festivals de cinéma"
 ))
 

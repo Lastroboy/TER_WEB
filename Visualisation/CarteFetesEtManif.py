@@ -11,7 +11,7 @@ carte.add_trace(go.Scattermapbox(
     lat = df["Latitude"], 
     lon = df["Longitude"],
     mode = "markers",
-    marker = dict(size = 10, color = "purple"),
+    marker = dict(size = 10, color = "#4C74B5"),
     name = "Fetes et manifestations"
 ))
 
