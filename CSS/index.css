@@ -26,25 +26,21 @@ html{
 body{
     min-height: 100vh;
     min-height: 100dvh;
-    /* background-color: var(--primary-color); */
-    /* background: linear-gradient(to right, #fce4ec, #b39ddb); */
-    color: #111;
-    /* max width 1000px  margin right auto margin left auto et rajouter du padding*/
 }
-
 
 /* Section principale */
 .intro {
     position: relative;
     display: flex;
+
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+
     overflow: hidden;
-    margin-right: auto;
-    margin-right: auto;
-    padding-left: 120px;
-    padding-right: 120px; 
+    min-height: 600px; /* OU min-height: 80vh;  */
+
+    margin: 0px auto;
+    padding: 0px 120px; 
     width: 100%;
 }
 
@@ -88,16 +84,19 @@ body{
 /* Bouton */
 .intro-btn {
     display: inline-block;
+
     background-color: var(--text-color);
     color: var(--banner-color);
+
     padding: 12px 24px;
+    margin-top: 15px;
     border-radius: 6px;
+
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    /* CHANGER LA COULEUR DU BOUTON*/
+
     transition: background 0.3s ease;
-    margin-top: 15px;
 }
 
 /* A MODIFIER LA COULEUR */
@@ -107,30 +106,36 @@ body{
 
 /* BANNER */
 .banner {
-    background-color: var(--banner-color); /* Fond clair */
-    width: 100%;
-
-    padding: 50px 120px;
-
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 
-    font-size: 16px;
+    width: 100%;
+    padding: 50px 120px;
+    margin: 0px auto;
+
+    background-color: var(--banner-color); /* Fond clair */
     color: var(--text-color);
+
+    font-size: 16px;
     line-height: 1.5; /* Mettre en cohérence avec les autres line-height */
 
     gap: 40px; /* Espacement entre le graphique et le texte */
 }
 
-
-.banner-graphique {
+/* .banner-graphique {
     height: 300px;
     width: 100%;
-    max-width: 500px; /* Évite que l'iframe devienne trop large */
-    border-radius: 4px;
-    border: none; /* Supprime le cadre noir si nécessaire */
+    max-width: 500px;
+    border-radius: 6px;
+    border: none; 
+} */
+
+.banner-graphique{
+    max-height: 300px;
+    border-radius: 6px;
+    /* padding-right: 75px; */
 }
 
 .banner ul {
@@ -140,7 +145,7 @@ body{
 }
 
 .banner ul li {
-    padding: 0px 15px;
+    padding: 0px 25px;
     text-align: center;
     font-size: 18px;
 }
@@ -173,20 +178,16 @@ body{
 }
 
 #presentation{
-    background-color: var(--primary-color);
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    /* A MODIFIER */
-    /* padding: 80px 40px; /* Qu'est ce que ça fait ça */
-    /* margin-top: 25px; */
     line-height: 1.5;
 
-    margin-right: auto;
-    margin-left: auto;
-    /* padding-left: 120px;
-    padding-right: 120px;  */
-    padding: 25px 120px 25px 120px;
+    margin: 0px auto;
+    padding: 25px 120px;
+
+    background-color: var(--primary-color);
 }
 
 .presentation-text{
@@ -194,7 +195,7 @@ body{
 }
 
 #presentation h1{
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px;
     font-size: 2rem;
     color: var(--red);
 }
@@ -212,15 +213,13 @@ body{
 }
 
 .map{
-    background-color: #f7f9ff; 
-    width: 100%; 
+    background-color: var(--banner-color); 
     text-align: center;
     
+    width: 100%; 
 
-    padding: 35px 0px 35px 0px;
-
-    margin-right: auto;
-    margin-right: auto;
+    padding: 35px 0px;
+    margin: 0px auto;
 }
 
 .map h2{
