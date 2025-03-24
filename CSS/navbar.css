@@ -13,16 +13,9 @@
 }
 
 nav{
-    /* background-color: var(--primary-color); */
-    /* border-bottom: 1px solid var(--hover-color); */
     background: rgba(255, 255, 255, 0.3); /* Ajoute un fond semi-transparent */
-    /* padding-right: 5%;
-    padding-left: 5%; */
-    padding-left: 120px;
-    padding-right: 120px; 
-
-    margin-right: auto;
-    margin-right: auto;
+    padding: 0px 120px;
+    margin: 0px auto;
 }
 
 nav ul{
@@ -40,12 +33,14 @@ nav li{
 
 nav a{
     display: flex;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 1em 2em;
-    transition: background-color 150ms ease;
     text-align: center;
     align-items: center;
+
+    padding: 1em 2em;
+    
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 150ms ease;
 }
 
 /* MODIFIER LA COULEUR */
