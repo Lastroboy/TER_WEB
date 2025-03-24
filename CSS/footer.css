@@ -17,12 +17,11 @@ footer{
     bottom: 0;
     width: 100%;
 
-    background-color: #25272e;
+    background-color: var(--footer-color);
     color: #fefefe;
     font-family: Arial, sans-serif;
 
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0px auto;
 
     width: 100%;
 }
@@ -56,7 +55,7 @@ ul li{
 }
 
 footer a{
-    color: #fefefe;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
