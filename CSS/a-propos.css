@@ -98,10 +98,10 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
     flex-wrap: wrap;
 
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 75px 120px;
 }
 
@@ -130,12 +130,12 @@ body{
 
 /* PARTIE MAP */
 .map{
-    background-color: #f7f9ff; 
+    background-color: var(--banner-color); 
     width: 100%; 
     text-align: center;
     
 
-    padding: 35px 0px 35px 0px;
+    padding: 35px 0px;
 
     margin: 0px auto;
 }
