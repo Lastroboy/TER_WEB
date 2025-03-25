@@ -16,9 +16,9 @@ Collecte des données : Récupération de données sur les événements culturel
 
 Traitement et analyse : Nettoyage et analyse des données pour en extraire des informations pertinentes (types d'événements, fréquences, répartition géographique, etc.).
 
-Visualisation : Création de graphiques interactifs avec des bibliothèques Python telles que Plotly et Bokeh, puis intégration sur le site web via des intégrations en HTML.
+Visualisation : Création de graphiques interactifs avec des bibliothèques Python telles que Plotly et Bokeh, puis intégration des visualisations en HTML sur le site web
 
-Développement Web : Conception d'une interface utilisateur simple et élégante en HTML et CSS, avec interactivité grâce à JavaScript.
+Développement Web : Conception d'une interface utilisateur simple et élégante en HTML et CSS, et JavaScript.
 
 ## Technologies utilisées
 Frontend : HTML, CSS, JavaScript
