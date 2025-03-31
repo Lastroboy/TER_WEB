@@ -54,32 +54,56 @@
             <img class="intro-img" src="./IMG/drapeau-bretagne.png" alt="Map Région Bretagne">
         </section>
 
-        <section class="visu1">
-            <div class="visu1-text">
-                <h1 class="visu1-titre">Répartition des activités ouvertes pendant le Covid par département</h1>
+        <section class="explication">
+            <h1>Explication des jeux de données utilisés</h1>
+            <p><u>Activités sportives et culturelles</u> : Ce jeu de données recense différentes activités sportives et culturelles en Bretagne, en fournissant des informations comme la localisation (latitude, longitude, commune…), le type d’activité (sports nautiques, gymnastique...) et l’accessibilité durant la période Covid. Par exemple, on y trouve des activités comme l’équitation à Carnac ou encore le catamaran à Quiberon. Ce jeu de données a été nettoyé pour garantir des visualisations exploitables, certaines informations étant incomplètes.</p>
+            <p><u>Festivals de cinéma en Bretagne</u> : Ce jeu de données recense les festivals de cinéma organisés en Bretagne, avec des informations telles que le nom du festival, la ville où il se déroule, le département, l’organisateur, un lien vers le site officiel et l’éventuel soutien de la Région Bretagne. Par exemple, il inclut le <em>Festival Travelling</em> à Rennes et le <em>Festival Pêcheurs du Monde</em> à Lorient. Ce jeu de données n’a pas eu besoin d’être nettoyé. Les deux jeux de données proviennent du site "<a href="https://data.bretagne.bzh" target="_blank" rel="noopener noreferrer">data.bretagne.bzh</a>".</p>
+        </section>
+
+        <section class="visu-droit">
+            <div class="visu-droit-text">
+                <h1 class="visu-droit-titre">Répartition des infrastructures sportives et culturelles par département</h1>
+                <p>Ce graphique en barres représente la répartition des infrastructures sportives et culturelles par département. On observe que le département 29 dispose du plus grand nombre d’installations, dépassant les 800 unités.</p>
+                <p>Il est suivi par le département 22 avec environ 700 infrastructures, puis le département 35 avec environ 600. Enfin, le département 56 est celui qui en compte le moins, avec un peu plus de 400 installations. Cette répartition met en évidence des disparités territoriales, possiblement liées à la taille, à la population ou aux politiques locales en matière de sport.</p>
+            </div>
+
+            <iframe class="visu-droit-graphique" src="./Visualisation/histogram-repartition-infrastuctures-sportives-par-departement.html"></iframe>
+        </section>
+
+        <section class="visu-gauche">
+            <iframe class="visu-gauche-graphique" src="./visualisation/camembert-repartition-sport-les-plus-representes.html"></iframe>
+
+            <div class="visu-gauche-text">
+                <h1>Répartition des 5 sports les plus représentés</h1>
+                <p>Ce diagramme circulaire illustre la répartition des cinq sports les plus pratiqués parmi un ensemble d’activités. La catégorie "Autres" domine largement avec 73,7 %, ce qui indique que les pratiques sportives sont très diversifiées en dehors des cinq catégories mises en avant.</p>
+                <p>Parmi celles-ci, la voile est l’activité la plus représentée avec 6,61 %, suivie de la randonnée pédestre (5,82 %), de l’équitation (5,29 %), du geocaching (5,29 %) et du jeu de piste (3,28 %). Cette répartition montre que ces sports spécifiques restent minoritaires par rapport à l’ensemble des pratiques recensées.</p>
+            </div>
+        </section>
+
+        <section class="visu-droit">
+            <div class="visu-droit-text">
+                <h1 class="visu-droit-titre">Répartition des activités ouvertes pendant le Covid par département</h1>
                 <p>Cet histogramme montre la répartition des activités ouvertes pendant le Covid selon les départements bretons. Les activités sont classées en trois catégories : ouvertes (jaune), fermées (rouge) et inconnues (bleu).</p>
-                <p>Le Finistère (29) est le département comptant le plus d'activités recensées, tandis que le Morbihan (56) en a moins. On remarque également une légère proportion d'activités dont le statut d’ouverture reste inconnu.</p>
+                <p>Le Finistère (29) est le département comptant le plus d'activités recensées, tandis que le Morbihan (56) en a moins. On remarque également une importante proportion d'activités dont le statut d’ouverture reste inconnu.</p>
             </div>
 
-            <iframe class="visu1-graphique" src="./Visualisation/histogram-ouverture-covid-loisirs-cultures.html"></iframe>
+            <iframe class="visu-droit-graphique" src="./Visualisation/histogram-ouverture-covid-loisirs-cultures.html"></iframe>
         </section>
 
-        <section class="visu2">
-            <iframe class="visu2-graphique" src="./visualisation/camembert-nb-festivals-aides-par-region.html"></iframe>
+        <section class="visu-gauche">
+            <iframe class="visu-gauche-graphique" src="./Visualisation/camembert-nb-festivals-aides-par-region.html"></iframe>
 
-            <div class="visu2-text">
-                <h1>Répartition des festivals aidés par la région Bretagne</h1>
-                <p>Ce graphique en camembert représente la part des festivals bénéficiant d’une aide de la région Bretagne. On constate que 58,1 % des festivals reçoivent un soutien financier, tandis que 41,9 % n’en bénéficient pas.</p>
-                <p> Cette répartition montre que la majorité des festivals obtiennent une aide, mais une part significative reste sans subvention régionale. Cela soulève des questions sur les critères d’attribution et l’impact de ces aides sur le développement culturel local.</p>
+            <div class="visu-gauche-text">
+                <h1>Répartition des cinémas en plein air aidés par la région Bretagne</h1>
+                <p>Ce graphique en camembert représente la part des cinémas en plein air bénéficiant d’une aide de la région Bretagne. On constate que 58,1 % des festivals reçoivent un soutien financier, tandis que 41,9 % n’en bénéficient pas.</p>
+                <p>Cette répartition montre que la majorité des festivals obtiennent une aide, mais une part significative reste sans subvention régionale. Cela soulève des questions sur les critères d’attribution et l’impact de ces aides sur le développement culturel local.</p>
             </div>
         </section>
-
 
         <section class="map">
             <h2>Les lieux incontournables.</h2>
-            <div id="map-container">
-                <!-- Intégration de la carte interactive ici -->
-                 <iframe src="./Visualisation/carte-activites-et-festivals.html" style="width: 80%; height: 600px; border: none;"></iframe>
+            <!-- Intégration de la carte interactive ici -->
+            <iframe src="./Visualisation/CarteActivitésEtFestivals.html" style="width: 80%; height: 600px; border: none;"></iframe>
             </div>
         </section>
     </main>
