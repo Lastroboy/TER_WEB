@@ -36,7 +36,6 @@ body{
     justify-content: center;
     overflow: hidden;
 
-    /* A SIMPLIFIER */
     margin: 0px auto;
     padding: 0px 120px;
 
@@ -67,7 +66,7 @@ body{
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--text-color); /* Assure une bonne lisibilité */
+    color: var(--text-color);
 }
 
 .intro p {
@@ -76,14 +75,42 @@ body{
     margin-bottom: 20px;
 }
 
-/* Image de la carte */
+/* Image de la bannière d'introduction */
 .intro-img {
     position: relative;
     max-width: 400px;
     transform: rotate(15deg);
 }
 
-.visu1{
+.explication{
+    text-align: justify;
+    line-height: 1.5;
+
+    margin: 0px auto;
+    padding: 25px 120px;
+}
+
+.explication h1{
+    padding: 25px 0px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.explication p{
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 0px 0px 25px 0px;
+}
+
+.explication a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.explication a:hover{
+    text-decoration: underline;
+}
+
+.visu-droit{
     background-color: var(--hover-color);
     display: flex;
     align-items: center;
@@ -97,32 +124,35 @@ body{
     min-height: 548px;
 }
 
-.visu1-text{
+.visu-droit-text{
     text-align: justify;
 }
 
-.visu1 h1{
+.visu-droit h1{
     padding: 25px 0px;
     font-size: 2rem;
-    color: var(--red);
+    color: var(--text-color);
 }
 
-.visu1 p{
+.visu-droit p{
     font-size: 16px;
     color: var(--text-color);
     padding: 0px 0px 25px 0px;
 }
  
-.visu1-graphique{
+.visu-droit-graphique{
     padding-left: 75px;
-    max-height: 400px; /* PEUT ETRE A MODIFIER */
-    height: 400px;
+    
+    height: 450px;
+    max-height: 450px; /* PEUT ETRE A MODIFIER */
+
     width: 100%;
-    max-width: 700px; /* Évite que l'iframe devienne trop large */
+    min-width: 700px;
+    max-width: 800px; /* Évite que l'iframe devienne trop large */
     border: none; /* Supprime le cadre noir si nécessaire */
 }
 
-.visu2{
+.visu-gauche{
     background-color: var(--primary-color);
 
     display: flex;
@@ -138,28 +168,28 @@ body{
     min-height: 548px;
 }
 
-.visu2-text{
+.visu-gauche-text{
     text-align: justify;
 }
 
-.visu2 h1{
+.visu-gauche h1{
     padding: 25px 0px;
     font-size: 2rem;
-    color: var(--red);
+    color: var(--text-color);
 }
 
-.visu2 p{
+.visu-gauche p{
     font-size: 16px;
     color: var(--text-color);
     padding-bottom: 25px;
 }
 
-.visu2-graphique{
-    height: 400px;
-    max-height: 400px;
+.visu-gauche-graphique{
+    height: 450px;
+    max-height: 450px;
 
     width: 100%;
-    min-width: 450px;
+    min-width: 650px;
     max-width: 700px; /* Évite que l'iframe devienne trop large */
     border: none; /* Supprime le cadre noir */
 
@@ -183,3 +213,30 @@ body{
     padding-bottom: 25px;
 }
 
+@media  screen and (max-width: 850px){
+    /* Image dans la bannière d'introduction */
+    .intro-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .visu-droit{
+        display: block;
+    }
+
+    .visu-droit-graphique{
+        padding: 0px;
+        min-width: 600px;
+    }
+
+    .visu-gauche{
+        display: block;
+    }
+
+    .visu-gauche-graphique{
+        padding: 0px;
+        min-width: 600px;
+    }
+    
+}
