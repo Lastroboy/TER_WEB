@@ -54,32 +54,51 @@
             <img class="intro-img" src="./IMG/drapeau-bretagne.png" alt="Map Région Bretagne">
         </section>
 
-        <section class="visu1">
-            <div class="visu1-text">
-                <h1 class="visu1-titre">Première visualisation</h1>
-                <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
-                <p>Grâce à la visualisation de données, nous proposons une approche interactive pour mieux comprendre la répartition et l'évolution de ces événements.</p>
-            </div>
-
-            <iframe class="visu1-graphique" src="./Visualisation/courbe-nb-festivals-par-date.html"></iframe>
+        <section class="explication">
+            <h1>Explication du jeu de données utilisé</h1>
+            <p><u>Fêtes et manifestations</u> : Ce jeu de données contient des renseignements sur divers événements organisés en Bretagne, tels que des festivals, des marchés de Noël ou encore des concerts. 
+                Il inclut des informations comme les dates, la localisation (latitude, longitude, commune), le type d'événement (musique, sport, culture…) ainsi que les tarifs d’entrée (payant, gratuit…). 
+                Par exemple, on y trouve des événements comme <em>Astropolis l’Hiver</em> à Brest (catégorie Musique) ou encore une <em>Bourse aux jouets et puériculture</em> à Plévenon (Autres événements). 
+                Ce jeu de données, issu du site "<a href="https://data.bretagne.bzh" target="_blank" rel="noopener noreferrer">data.bretagne.bzh</a>", a été construit par le Comité Régional du Tourisme de Bretagne avec ses partenaires. 
+                Il a été nettoyé afin d’éliminer certaines valeurs manquantes et de garantir des visualisations exploitables.</p>
         </section>
 
-        <section class="visu2">
-            <iframe class="visu2-graphique" src="./Visualisation/camembert-gratuite-fetes-et-manif.html"></iframe>
+        <section class="visu-droit">
+            <div class="visu-droit-text">
+                <h1 class="visu-droit-titre">Répartition des différents types d'évènements</h1>
+                <p>Ce diagramme circulaire illustre la répartition des différents types d’événements. Les événements culturels dominent largement avec 59,3 % du total, montrant une forte prédominance de ce type d’activités.</p>
+                <p>Les événements classés dans la catégorie "Autres" représentent 12,3 %, suivis des événements musicaux (11,2 %). Les manifestations sportives (9,79 %) et les animations (7,39 %) sont moins fréquentes. Cette distribution met en évidence une programmation principalement axée sur la culture, avec une diversité d’activités complémentaires.</p>
+            </div>
 
-            <div class="visu2-text">
-                <h1>Répartition des événements selon leur accessibilité en Bretagne</h1>
+            
+
+            <iframe class="visu-droit-graphique" src="./Visualisation/camembert-repartition-types-evenements.html"></iframe>
+        </section>
+
+        <section class="visu-gauche">
+            <iframe class="visu-gauche-graphique" src="./Visualisation/camembert-gratuite-fetes-et-manif.html"></iframe>
+
+            <div class="visu-gauche-text">
+                <h1>Répartition des modes de tarification des événements</h1>
                 <p>Ce graphique en camembert illustre la répartition des fêtes et manifestations en Bretagne selon leur mode de tarification. On observe que 51,2 % des événements sont payants, tandis que 39,1 % sont gratuits.</p>
                 <p>Une plus petite part (7,15%) correspond aux événements dont les tarifs ne sont pas communiqués, et 2,56 % fonctionnent sur le principe de la libre participation. Ces chiffres montrent une diversité d'accès aux événements, avec une part significative d’offres gratuites permettant un accès large à la culture.</p>
             </div>
         </section>
 
+        <section class="visu-droit">
+            <div class="visu-droit-text">
+                <h1 class="visu-droit-titre">Évolution du nombre d'activités par saison et année</h1>
+                <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
+                <p>Grâce à la visualisation de données, nous proposons une approche interactive pour mieux comprendre la répartition et l'évolution de ces événements.</p>
+            </div>
+
+            <iframe class="visu-droit-graphique" src="./Visualisation/courbe-nb-activites-par-saison_et_annee.html" style="min-width: 800px;"></iframe>
+        </section>
+
         <section class="map">
             <h2>Localisation des fêtes et manifestations.</h2>
-            <div id="map-container">
-                <!-- Intégration de la carte interactive ici -->
-                 <iframe src="./Visualisation/carte-fetes-et-manifestations.html" style="width: 80%; height: 600px; border: none;"></iframe>
-            </div>
+            <!-- Intégration de la carte interactive ici -->
+            <iframe src="./Visualisation/CarteFetesEtManifestations.html" style="width: 80%; height: 600px; border: none;"></iframe>
         </section>
     </main>
     
