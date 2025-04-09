@@ -31,8 +31,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#25272e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </button>
             </li>
-            <li class="logo-li"><a aria-current="page" href="main.html">
-                <img src="./IMG/region-bretagne-logo.svg" alt="logo région bretagne" height="70" width="100"></a></li>
+            <li class="logo-li"><a aria-current="page" href="index.html"><img src="./IMG/region-bretagne-logo.svg" alt="logo région bretagne" height="70" width="100"></a></li>
             <li><a href="index.html">Accueil</a></li>
             <li><a class="active-link" href="visualisation-1.html">Fêtes & Manifestations</a></li>
             <li><a href="visualisation-2.html">Loisirs & Culture</a></li>
@@ -42,6 +41,7 @@
 
     <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
+    <!-- CONTENU PREINCIPAL -->
     <main>
         <section class="intro">
             <img class="intro-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
@@ -65,12 +65,10 @@
 
         <section class="visu-droit">
             <div class="visu-droit-text">
-                <h1 class="visu-droit-titre">Répartition des différents types d'évènements</h1>
+                <h1 class="visu-droit-titre">Répartition des 5 catégories d'évènements les plus représentées</h1>
                 <p>Ce diagramme circulaire illustre la répartition des différents types d’événements. Les événements culturels dominent largement avec 59,3 % du total, montrant une forte prédominance de ce type d’activités.</p>
                 <p>Les événements classés dans la catégorie "Autres" représentent 12,3 %, suivis des événements musicaux (11,2 %). Les manifestations sportives (9,79 %) et les animations (7,39 %) sont moins fréquentes. Cette distribution met en évidence une programmation principalement axée sur la culture, avec une diversité d’activités complémentaires.</p>
             </div>
-
-            
 
             <iframe class="visu-droit-graphique" src="./Visualisation/camembert-repartition-types-evenements.html"></iframe>
         </section>
@@ -80,7 +78,7 @@
 
             <div class="visu-gauche-text">
                 <h1>Répartition des modes de tarification des événements</h1>
-                <p>Ce graphique en camembert illustre la répartition des fêtes et manifestations en Bretagne selon leur mode de tarification. On observe que 51,2 % des événements sont payants, tandis que 39,1 % sont gratuits.</p>
+                <p>Ce diagramme circulaire illustre la répartition des fêtes et manifestations en Bretagne selon leur mode de tarification. On observe que 51,2 % des événements sont payants, tandis que 39,1 % sont gratuits.</p>
                 <p>Une plus petite part (7,15%) correspond aux événements dont les tarifs ne sont pas communiqués, et 2,56 % fonctionnent sur le principe de la libre participation. Ces chiffres montrent une diversité d'accès aux événements, avec une part significative d’offres gratuites permettant un accès large à la culture.</p>
             </div>
         </section>
@@ -88,8 +86,8 @@
         <section class="visu-droit">
             <div class="visu-droit-text">
                 <h1 class="visu-droit-titre">Évolution du nombre d'activités par saison et année</h1>
-                <p>Ce projet s’inscrit dans le cadre du Travail d’Étude et de Recherche (TER) et vise à explorer la richesse des données culturelles et festives en région Bretagne.</p>
-                <p>Grâce à la visualisation de données, nous proposons une approche interactive pour mieux comprendre la répartition et l'évolution de ces événements.</p>
+                <p>Cette visualisation illustre l’évolution du nombre d’activités en Bretagne de 2018 à 2021, toutes saisons confondues. De 2018 à 2020, le total annuel (courbe rouge) reste modéré, avant un pic exceptionnel à l’automne 2020 (courbe noire), qui fait bondir le total.</p>
+                <p>Après cette hausse, le niveau reste plus élevé qu’avant, avec une tendance plus stable à partir de l'Hiver 2021. L’été et l’automne (jaune et noir) sont les saisons les plus dynamiques, devant le printemps et l’hiver.</p>
             </div>
 
             <iframe class="visu-droit-graphique" src="./Visualisation/courbe-nb-activites-par-saison_et_annee.html" style="min-width: 800px;"></iframe>
@@ -97,11 +95,12 @@
 
         <section class="map">
             <h2>Localisation des fêtes et manifestations.</h2>
-            <!-- Intégration de la carte interactive ici -->
+            <!-- Intégration de la carte interactive -->
             <iframe src="./Visualisation/CarteFetesEtManifestations.html" style="width: 80%; height: 600px; border: none;"></iframe>
         </section>
     </main>
     
+    <!-- BAS DE PAGE -->
     <footer>
         <div class="footer-container">
             <div class="footer-logos">
