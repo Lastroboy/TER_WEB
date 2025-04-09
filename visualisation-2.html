@@ -31,8 +31,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="#25272e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </button>
             </li>
-            <li class="logo-li"><a aria-current="page" href="main.html">
-                <img src="./IMG/region-bretagne-logo.svg" alt="logo région bretagne" height="70" width="100"></a></li>
+            <li class="logo-li"><a aria-current="page" href="index.html"><img src="./IMG/region-bretagne-logo.svg" alt="logo région bretagne" height="70" width="100"></a></li>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="visualisation-1.html">Fêtes & Manifestations</a></li>
             <li><a class="active-link" href="visualisation-2.html">Loisirs & Culture</a></li>
@@ -41,7 +40,8 @@
     </nav>
 
     <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
-
+    
+    <!-- CONTENU PREINCIPAL -->
     <main>
         <section class="intro">
             <img class="intro-background-top" src="./IMG/background-top.avif" alt="Illustration représentant la Bretagne">
@@ -82,8 +82,8 @@
 
         <section class="visu-droit">
             <div class="visu-droit-text">
-                <h1 class="visu-droit-titre">Répartition des activités ouvertes pendant le Covid par département</h1>
-                <p>Cet histogramme montre la répartition des activités ouvertes pendant le Covid selon les départements bretons. Les activités sont classées en trois catégories : ouvertes (jaune), fermées (rouge) et inconnues (bleu).</p>
+                <h1 class="visu-droit-titre">Répartition des activités ouvertes, fermées et inconnues pendant le COVID par département</h1>
+                <p>Cet histogramme montre la répartition des activités ouvertes et fermées pendant le Covid selon les départements bretons. Les activités sont classées en trois catégories : ouvertes (jaune), fermées (rouge) et inconnues (bleu).</p>
                 <p>Le Finistère (29) est le département comptant le plus d'activités recensées, tandis que le Morbihan (56) en a moins. On remarque également une importante proportion d'activités dont le statut d’ouverture reste inconnu.</p>
             </div>
 
@@ -95,19 +95,20 @@
 
             <div class="visu-gauche-text">
                 <h1>Répartition des cinémas en plein air aidés par la région Bretagne</h1>
-                <p>Ce graphique en camembert représente la part des cinémas en plein air bénéficiant d’une aide de la région Bretagne. On constate que 58,1 % des festivals reçoivent un soutien financier, tandis que 41,9 % n’en bénéficient pas.</p>
+                <p>Ce diagramme circulaire représente la part des cinémas en plein air bénéficiant d’une aide de la région Bretagne. On constate que 58,1 % des festivals reçoivent un soutien financier, tandis que 41,9 % n’en bénéficient pas.</p>
                 <p>Cette répartition montre que la majorité des festivals obtiennent une aide, mais une part significative reste sans subvention régionale. Cela soulève des questions sur les critères d’attribution et l’impact de ces aides sur le développement culturel local.</p>
             </div>
         </section>
 
         <section class="map">
             <h2>Les lieux incontournables.</h2>
-            <!-- Intégration de la carte interactive ici -->
+            <!-- Intégration de la carte interactive -->
             <iframe src="./Visualisation/CarteActivitésEtFestivals.html" style="width: 80%; height: 600px; border: none;"></iframe>
             </div>
         </section>
     </main>
-    
+
+    <!-- BAS DE PAGE -->
     <footer>
         <div class="footer-container">
             <div class="footer-logos">
