@@ -25,7 +25,7 @@ Frontend : HTML, CSS, JavaScript
 
 Backend : Python, Jupyter Notebooks
 
-Librairies de visualisation : Ploty et Bokeh
+Librairies de visualisation : Plotly et Bokeh
 
 Outils de développement : GitHub, VSCode
 
